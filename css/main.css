@@ -1,0 +1,96 @@
+:root {
+  --main-bg-color: #f2f2f2;
+  --searchbox-bg-color: #e7e7e7;
+  --chat-room-list-bg-color: rgba(0, 0, 0, 0.226);
+  --text-color: #1cbfca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* HEADER */
+.navbar {
+  height: 70px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+}
+.navbar h1 {
+  color: var(--text-color);
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+}
+.navbar input[type="text"] {
+  background-color: var(--searchbox-bg-color);
+  padding: 3px;
+  height: 65%;
+  border-radius: 5px;
+  border: none;
+  flex-grow: 2;
+  margin: 0 4rem;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+.navbar input[type="text"]:focus {
+  outline: none;
+  background-color: var(--searchbox-focus-bg-color);
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li {
+  margin-right: 1em;
+}
+i {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* CHAT ROOM SECTION */
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.chat-room-section {
+  background-color: var(--main-bg-color);
+  /* height: 100%; */
+}
+#chat-list-room {
+  font-family: "Trykker", serif;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+.list-items{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.item{
+    background-color: var(--chat-room-list-bg-color);
+    margin: 1rem 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgba(37, 37, 37, 0.767);
+    text-align: center;
+}
+.active {
+    background-color: #1cbfca;
+    color: #fff;
+}
+.chat-container {
+  flex-grow: 2;
+}
