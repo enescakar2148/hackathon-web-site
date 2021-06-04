@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
@@ -21,103 +22,27 @@
       href="https://fonts.googleapis.com/css2?family=Trykker&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Anasayfa</title>
+    <link rel="stylesheet" href="./css/auth.css" />
+
+    <title>Auth</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <nav>
-        <div class="navbar" id="nav">
-          <h1>Prometheus</h1>
-          <input type="text" placeholder="Mentor Ara.." />
-          <div class="menus">
-            <ul>
-              <li><i class="far fa-comments"></i></li>
-              <li><i class="far fa-bell"></i></li>
-              <li><i class="fas fa-sign-out-alt"></i></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- CONTENT -->
     <div class="content">
-      <div class="chat-room-section">
-        <h2 id="chat-list-room">Chat Rooms</h2>
-        <div class="list-items">
-          <h3 class="item active">Chat Room 1</h3>
-          <h3 class="item">Chat Room 2</h3>
-          <h3 class="item">Chat Room 3</h3>
-          <h3 class="item">Chat Room 4</h3>
-          <h3 class="item">Chat Room 5</h3>
-          <h3 class="item">Chat Room 6</h3>
-          <h3 class="item">Chat Room 7</h3>
-          <h3 class="item">Chat Room 8</h3>
+      <div class="login">
+        <img src="./images/logoforeground.png" alt="Logo" />
+        <div class="inputs">
+            <label>E-mail</label>
+            <input type="email" placeholder="mail@mail.com" />
+            <label>Şifre</label>
+            <input type="password" placeholder="Şifre" />
+            <button type="submit">Giriş Yap</button>
         </div>
       </div>
-      <div class="chat-container">
-        <h2>Chat Room 1</h2>
-        <div class="messages">
-          <div class="bubble">
-            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
-            <div class="datas">
-              <h2 id="mail">a.b.c@mail.com</h2>
-              <p id="message">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div class="bubble">
-            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
-            <div class="datas">
-              <h2 id="mail">a.b.c@mail.com</h2>
-              <p id="message">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum
-              </p>
-            </div>
-          </div>
-          <div class="bubble">
-            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
-            <div class="datas">
-              <h2 id="mail">a.b.c@mail.com</h2>
-              <p id="message">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <div class="sign-up"></div>
     </div>
+
     <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
     <script>
       // Your web app's Firebase configuration
@@ -134,5 +59,8 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
     </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

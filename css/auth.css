@@ -1,0 +1,64 @@
+:root {
+    --main-bg-color: #095baa;
+    --searchbox-bg-color: #fff;
+    --chat-room-list-bg-color: #fff;
+    --searchbox-focus-bg-color: rgb(247, 247, 247);
+    --text-color: #fff;
+    --chat-bubble: #f2f2f2;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: #fff;
+  }
+  .login{
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .inputs {
+      display: flex;
+      flex-direction: column;
+  }
+  .inputs input{
+    margin: 1rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--main-bg-color);
+    flex-grow: 2;
+  }
+  
+  .inputs input:focus{
+    outline: none;
+    background-color: #095baa;
+    color: #fff; 
+  }
+  .inputs input:focus::placeholder{
+    color: #fff;
+  }
+
+  .inputs label{
+    color: #095baa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+  }
+  .inputs button{
+    background-color: #095baa;
+    border: none;
+    padding: .75rem;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .inputs button:hover{
+    background-color: #fff;
+    color: #095baa;
+    border: 1px solid var(--main-bg-color);
+  }

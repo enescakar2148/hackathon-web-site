@@ -127,3 +127,35 @@ i {
   height: 4rem;
   margin-right: 1rem;
 }
+.message-controller{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+#message_input{
+  margin: 1rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--main-bg-color);
+  flex-grow: 2;
+}
+#message_input:focus{
+  outline: none;
+  background-color: #095baa;
+  color: #fff; 
+}
+#message_input:focus::placeholder{
+  color: #fff;
+}
+#send{
+  height: 60px;
+  width: 60px;
+  background-color: #095baa;
+  border: none;
+  border-radius: 100%;
+}
+#send i{
+  font-size: 1.5rem;
+}

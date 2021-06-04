@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trykker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Anasayfa</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="navbar" id="nav">
+          <h1>Prometheus</h1>
+          <input type="text" placeholder="Mentor Ara.." />
+          <div class="menus">
+            <ul>
+              <li><i class="far fa-comments"></i></li>
+              <li><i class="far fa-bell"></i></li>
+              <li><i class="fas fa-sign-out-alt"></i></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="chat-room-section">
+        <h2 id="chat-list-room">Chat Rooms</h2>
+        <div class="list-items">
+          <h3 class="item active"  class="chat_room" id="ChatRoom_1" onclick="chatIdSetter(this)">Chat Room 1</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_2" onclick="chatIdSetter(this)">Chat Room 2</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_3" onclick="chatIdSetter(this)">Chat Room 3</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_4" onclick="chatIdSetter(this)">Chat Room 4</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_5" onclick="chatIdSetter(this)">Chat Room 5</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_6" onclick="chatIdSetter(this)">Chat Room 6</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_7" onclick="chatIdSetter(this)">Chat Room 7</h3>
+            <h3 class="item" class="chat_room" id="ChatRoom_8" onclick="chatIdSetter(this)">Chat Room 8</h3>
+        </div>
+      </div>
+      <div class="chat-container" style="width: 100%;">
+        <h2>Chat Room 1</h2>
+        <div class="messages_list" style="overflow-y:auto; height: 80vh; ">
+        </div>
+       <div class="message-controller">
+        <input type="text" id="message_input" placeholder="Mesaj Yaz..." name="message_text">
+        <button id="send" onclick="messageHandler()"><i class="far fa-paper-plane"></i></button>
+       </div>
+      </div>
+      
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCurZvdbYoWtiYbhccQsUA1t9nkeBe0y04",
+        authDomain: "hackathon-9effa.firebaseapp.com",
+        databaseURL:
+          "https://hackathon-9effa-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "hackathon-9effa",
+        storageBucket: "hackathon-9effa.appspot.com",
+        messagingSenderId: "328810715680",
+        appId: "1:328810715680:web:697c04069a3d7a20deba45",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/index.js"></script>
+  </body>
+</html>
