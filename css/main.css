@@ -94,7 +94,7 @@ i {
 .item:hover {
   background-color: var(--main-bg-color);
   color: #fff;
-  border-color: #fff;
+  border: 1px solid #fff;
 }
 .active {
   background-color: transparent;
