@@ -89,6 +89,11 @@ i {
   padding: 5px;
   color: var(--main-bg-color);
   text-align: center;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: var(--main-bg-color);
+  color: #fff;
 }
 .active {
   background-color: transparent;
