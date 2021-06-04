@@ -11,7 +11,10 @@ let dstr = (d.toString().substring(0, 10)+d.toString().substring(15,31)+":"+d.to
 console.log(d.toString().substring(31,33))
 console.log(d.toString().substring(11,15))
 */
-
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const userMail = urlParams.get('email')
+console.log(userMail)
 var chatIdSetter = (item) =>{
 	listeningRoomId = item.id
 	console.log("From now on listening to room: "+listeningRoomId)
@@ -28,7 +31,7 @@ var messageHandler = () => {
 	let dateHour = dateInstance.getHours().toString()
 	let dateMin =  dateInstance.getMinutes().toString()
 	let dateSec =  dateInstance.getSeconds().toString()
-	let sender = "a@b.com"
+	let sender = userMail;
 	let d = new Date()
 	let dstr = (d.toString().substring(0, 10)+d.toString().substring(15,31)+":"+d.toString().substring(31,33)+" "+d.toString().substring(11,15))
 
