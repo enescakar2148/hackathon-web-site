@@ -46,23 +46,76 @@
     <!-- CONTENT -->
     <div class="content">
       <div class="chat-room-section">
-          <h2 id="chat-list-room">Chat Rooms</h2>
-          <div class="list-items">
-              <h3 class="item active">Chat Room 1</h3>
-              <h3 class="item">Chat Room 2</h3>
-              <h3 class="item">Chat Room 3</h3>
-              <h3 class="item">Chat Room 4</h3>
-              <h3 class="item">Chat Room 5</h3>
-              <h3 class="item">Chat Room 6</h3>
-              <h3 class="item">Chat Room 7</h3>
-              <h3 class="item">Chat Room 8</h3>
-          </div>
+        <h2 id="chat-list-room">Chat Rooms</h2>
+        <div class="list-items">
+          <h3 class="item active">Chat Room 1</h3>
+          <h3 class="item">Chat Room 2</h3>
+          <h3 class="item">Chat Room 3</h3>
+          <h3 class="item">Chat Room 4</h3>
+          <h3 class="item">Chat Room 5</h3>
+          <h3 class="item">Chat Room 6</h3>
+          <h3 class="item">Chat Room 7</h3>
+          <h3 class="item">Chat Room 8</h3>
+        </div>
       </div>
       <div class="chat-container">
-          <h2>Chat Room 1</h2>
-          <div class="messages">
-              
+        <h2>Chat Room 1</h2>
+        <div class="messages">
+          <div class="bubble">
+            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
+            <div class="datas">
+              <h2 id="mail">a.b.c@mail.com</h2>
+              <p id="message">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
           </div>
+          <div class="bubble">
+            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
+            <div class="datas">
+              <h2 id="mail">a.b.c@mail.com</h2>
+              <p id="message">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
+          </div>
+          <div class="bubble">
+            <img src="./images/mentormanimg.png" alt="avatar" id="avatar" />
+            <div class="datas">
+              <h2 id="mail">a.b.c@mail.com</h2>
+              <p id="message">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
@@ -71,11 +124,12 @@
       var firebaseConfig = {
         apiKey: "AIzaSyCurZvdbYoWtiYbhccQsUA1t9nkeBe0y04",
         authDomain: "hackathon-9effa.firebaseapp.com",
-        databaseURL: "https://hackathon-9effa-default-rtdb.europe-west1.firebasedatabase.app",
+        databaseURL:
+          "https://hackathon-9effa-default-rtdb.europe-west1.firebasedatabase.app",
         projectId: "hackathon-9effa",
         storageBucket: "hackathon-9effa.appspot.com",
         messagingSenderId: "328810715680",
-        appId: "1:328810715680:web:697c04069a3d7a20deba45"
+        appId: "1:328810715680:web:697c04069a3d7a20deba45",
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);

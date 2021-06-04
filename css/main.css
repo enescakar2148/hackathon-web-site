@@ -1,8 +1,10 @@
 :root {
-  --main-bg-color: #f2f2f2;
-  --searchbox-bg-color: #e7e7e7;
-  --chat-room-list-bg-color: rgba(0, 0, 0, 0.226);
-  --text-color: #1cbfca;
+  --main-bg-color: #095baa;
+  --searchbox-bg-color: #fff;
+  --chat-room-list-bg-color: #fff;
+  --searchbox-focus-bg-color: rgb(247, 247, 247);
+  --text-color: #fff;
+  --chat-bubble: #f2f2f2;
 }
 
 * {
@@ -68,6 +70,7 @@ i {
 .chat-room-section {
   background-color: var(--main-bg-color);
   /* height: 100%; */
+  min-width: 15%;
 }
 #chat-list-room {
   font-family: "Trykker", serif;
@@ -75,22 +78,52 @@ i {
   font-size: 1.25rem;
   padding: 0.75rem 1.5rem;
 }
-.list-items{
-    margin-left: 1rem;
-    margin-right: 1rem;
+.list-items {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-.item{
-    background-color: var(--chat-room-list-bg-color);
-    margin: 1rem 1rem;
-    border-radius: 10px;
-    padding: 5px;
-    color: rgba(37, 37, 37, 0.767);
-    text-align: center;
+.item {
+  background-color: var(--chat-room-list-bg-color);
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  padding: 5px;
+  color: var(--main-bg-color);
+  text-align: center;
 }
 .active {
-    background-color: #1cbfca;
-    color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 .chat-container {
-  flex-grow: 2;
+  margin: 1rem;
+  color: #095baa;
+  font-style: italic;
+  font-size: 1rem;
+}
+.messages {
+  margin: 1rem;
+}
+.bubble {
+  background-color: var(--main-bg-color);
+  padding: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  margin: 1rem;
+}
+#mail {
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+#message {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+#avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
 }
